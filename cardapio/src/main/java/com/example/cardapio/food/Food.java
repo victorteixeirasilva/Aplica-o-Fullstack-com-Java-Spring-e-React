@@ -3,6 +3,10 @@ package com.example.cardapio.food;
 import jakarta.persistence.*;
 import lombok.*;
 
+/**
+ * @author Victor Teixeira Silva
+ * @version 1.0
+ */
 @Table(name = "foods")
 @Entity(name = "foods")
 @EqualsAndHashCode(of = "id")
