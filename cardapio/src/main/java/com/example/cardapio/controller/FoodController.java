@@ -20,14 +20,14 @@ public class FoodController {
     @Autowired
     private FoodRepository repository;
 
-    @CrossOrigin(origins = "*", allowCredentials = "*")
+    @CrossOrigin(origins = "*")
     @PostMapping
     public void saveFood(@RequestBody FoodRequestDTO data) {
         Food food = new Food(data);
         repository.save(food);
     }
 
-    @CrossOrigin(origins = "*", allowCredentials = "*")
+    @CrossOrigin(origins = "*")
     @GetMapping
     public List<FoodResponseDTO> getAll(){
         List<FoodResponseDTO> foodList = repository.findAll()

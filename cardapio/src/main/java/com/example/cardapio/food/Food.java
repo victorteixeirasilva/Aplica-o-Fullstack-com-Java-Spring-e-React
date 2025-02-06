@@ -9,7 +9,6 @@ import lombok.*;
  */
 @Table(name = "foods")
 @Entity(name = "foods")
-@EqualsAndHashCode(of = "id")
 public class Food {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
